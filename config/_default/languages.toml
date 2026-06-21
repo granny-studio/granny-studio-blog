@@ -1,0 +1,12 @@
+[ko]
+label = "한국어"
+locale = "ko-KR"
+weight = 1
+contentDir = "content"
+
+[ko.params]
+displayName = "KO"
+isoCode = "ko"
+rtl = false
+dateFormat = "2006년 1월 2일"
+description = "Granny Studio를 만들어가는 SangSangCat의 기록"

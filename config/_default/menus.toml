@@ -1,0 +1,24 @@
+[[main]]
+name = "About"
+pageRef = "about"
+weight = 10
+
+[[main]]
+name = "Projects"
+pageRef = "projects"
+weight = 20
+
+[[main]]
+name = "Journal"
+pageRef = "journal"
+weight = 30
+
+[[main]]
+name = "Troubleshooting"
+pageRef = "troubleshooting"
+weight = 40
+
+[[main]]
+name = "Life"
+pageRef = "life"
+weight = 50

@@ -1,0 +1,36 @@
+colorScheme = "blowfish"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+enableSearch = true
+enableCodeCopy = true
+mainSections = ["journal", "troubleshooting", "life"]
+
+[homepage]
+layout = "page"
+showRecent = false
+
+[header]
+layout = "basic"
+showTitle = true
+
+[footer]
+showCopyright = true
+showThemeAttribution = true
+showAppearanceSwitcher = true
+showScrollToTop = true
+
+[article]
+showDate = true
+showAuthor = false
+showReadingTime = true
+showTableOfContents = true
+showTaxonomies = true
+showWordCount = false
+showComments = false
+
+[list]
+showSummary = true
+showCards = true
+showDate = true
+showTableOfContents = false
+showTaxonomies = true
