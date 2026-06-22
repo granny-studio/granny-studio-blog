@@ -1,0 +1,10 @@
+{{ $yarn := resources.Get "img/granny-yarn-ball-needles.png" }}
+
+{{ with $yarn }}
+  {{ $yarnURL := .RelPermalink }}
+  <div class="granny-yarn-rain" aria-hidden="true">
+    {{ range seq 1 8 }}
+      <img src="{{ $yarnURL }}" alt="" class="nozoom">
+    {{ end }}
+  </div>
+{{ end }}
