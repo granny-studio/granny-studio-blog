@@ -3,11 +3,14 @@ defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
-mainSections = ["journal", "troubleshooting", "life"]
+mainSections = ["projects", "journal", "troubleshooting", "life"]
 
 [homepage]
-layout = "page"
-showRecent = false
+layout = "background"
+showRecent = true
+cardView = true
+cardViewScreenWidth = 1024
+homepageImage = "img/homepage-bg.svg"
 
 [header]
 layout = "basic"

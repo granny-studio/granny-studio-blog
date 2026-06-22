@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">JoopJoop feature image</title>
+  <desc id="desc">Feature image for the JoopJoop project.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#284b63"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="980" cy="150" r="160" fill="#f6c177" opacity="0.18"/>
+  <rect x="86" y="88" width="280" height="44" rx="22" fill="#f8f7f2" opacity="0.12"/>
+  <text x="86" y="240" font-family="Inter, system-ui, sans-serif" font-size="78" font-weight="800" fill="#f8f7f2">JoopJoop</text>
+  <text x="86" y="304" font-family="Inter, system-ui, sans-serif" font-size="28" fill="#c8d6e5">부트캠프 중간 프로젝트</text>
+  <rect x="86" y="408" width="440" height="14" rx="7" fill="#8bb3d6"/>
+  <rect x="86" y="444" width="320" height="14" rx="7" fill="#5f86a7"/>
+  <rect x="86" y="480" width="370" height="14" rx="7" fill="#f6c177"/>
+  <rect x="710" y="345" width="350" height="180" rx="24" fill="#09121d" opacity="0.75"/>
+  <rect x="740" y="376" width="290" height="28" rx="14" fill="#f8f7f2" opacity="0.15"/>
+  <rect x="740" y="420" width="230" height="16" rx="8" fill="#8bb3d6"/>
+  <rect x="740" y="452" width="260" height="16" rx="8" fill="#f6c177"/>
+</svg>

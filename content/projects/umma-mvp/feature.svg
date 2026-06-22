@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Umma MVP feature image</title>
+  <desc id="desc">Feature image for the Umma MVP project.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#15263d"/>
+      <stop offset="100%" stop-color="#d16f3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="960" cy="160" r="170" fill="#ffd9a0" opacity="0.16"/>
+  <text x="86" y="240" font-family="Inter, system-ui, sans-serif" font-size="78" font-weight="800" fill="#f8f7f2">Umma MVP</text>
+  <text x="86" y="304" font-family="Inter, system-ui, sans-serif" font-size="28" fill="#f8f7f2" opacity="0.82">Android 기반 부트캠프 최종 프로젝트</text>
+  <rect x="86" y="408" width="500" height="14" rx="7" fill="#f8f7f2" opacity="0.22"/>
+  <rect x="86" y="444" width="350" height="14" rx="7" fill="#8bb3d6"/>
+  <rect x="86" y="480" width="430" height="14" rx="7" fill="#f6c177"/>
+  <rect x="700" y="332" width="330" height="220" rx="28" fill="#09121d" opacity="0.72"/>
+  <rect x="735" y="362" width="260" height="22" rx="11" fill="#f8f7f2" opacity="0.15"/>
+  <rect x="735" y="402" width="210" height="18" rx="9" fill="#8bb3d6"/>
+  <rect x="735" y="436" width="245" height="18" rx="9" fill="#f6c177"/>
+  <rect x="735" y="470" width="188" height="18" rx="9" fill="#f8f7f2" opacity="0.18"/>
+</svg>

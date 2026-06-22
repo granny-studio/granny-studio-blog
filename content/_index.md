@@ -3,8 +3,6 @@ title: "Granny Studio"
 description: "Granny Studio를 만들어가는 SangSangCat의 기록"
 ---
 
-# Granny Studio
-
 Granny Studio를 만들어가는 SangSangCat의 기록.
 
 개발자로 성장하는 과정, 제품을 만드는 과정, 그리고 그 사이의 여행과 일상을 기록합니다.

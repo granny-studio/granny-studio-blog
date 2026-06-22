@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Umma feature image</title>
+  <desc id="desc">Feature image for the Umma project.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1320"/>
+      <stop offset="50%" stop-color="#1b2a3f"/>
+      <stop offset="100%" stop-color="#2f4158"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="960" cy="160" r="180" fill="#f6c177" opacity="0.14"/>
+  <circle cx="880" cy="240" r="120" fill="#8bb3d6" opacity="0.10"/>
+  <text x="86" y="240" font-family="Inter, system-ui, sans-serif" font-size="88" font-weight="800" fill="#f8f7f2">Umma</text>
+  <text x="86" y="304" font-family="Inter, system-ui, sans-serif" font-size="28" fill="#c8d6e5">Granny Studio의 현재 메인 프로젝트</text>
+  <rect x="86" y="408" width="520" height="14" rx="7" fill="#f8f7f2" opacity="0.18"/>
+  <rect x="86" y="444" width="420" height="14" rx="7" fill="#8bb3d6"/>
+  <rect x="86" y="480" width="470" height="14" rx="7" fill="#f6c177"/>
+  <rect x="690" y="300" width="370" height="260" rx="28" fill="#09121d" opacity="0.72"/>
+  <rect x="730" y="336" width="290" height="24" rx="12" fill="#f8f7f2" opacity="0.15"/>
+  <rect x="730" y="376" width="240" height="18" rx="9" fill="#8bb3d6"/>
+  <rect x="730" y="410" width="300" height="18" rx="9" fill="#f6c177"/>
+  <rect x="730" y="444" width="220" height="18" rx="9" fill="#f8f7f2" opacity="0.18"/>
+  <rect x="730" y="478" width="260" height="18" rx="9" fill="#d16f3b"/>
+</svg>
