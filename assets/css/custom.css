@@ -49,7 +49,7 @@ html.dark body {
 
 .granny-logo-frame {
   margin-inline: auto;
-  max-width: 560px;
+  max-width: 360px;
   overflow: hidden;
   border: 0;
   border-radius: 12px;
@@ -60,6 +60,7 @@ html.dark body {
 .granny-logo-frame img {
   display: block;
   width: 100%;
+  max-width: 360px;
   height: auto;
   margin: 0;
 }
@@ -304,8 +305,12 @@ html.dark body {
   }
 
   .granny-logo-frame {
-    max-width: 330px;
+    max-width: 280px;
     border-radius: 10px;
+  }
+
+  .granny-logo-frame img {
+    max-width: 280px;
   }
 
   .granny-section-header {
