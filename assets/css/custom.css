@@ -490,6 +490,11 @@ html.dark body {
 
 .prose .granny-project-column {
   min-width: 0;
+  border: 1px solid rgba(8, 45, 79, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  background: rgba(255, 250, 242, 0.36);
+  box-shadow: 0 16px 40px rgba(51, 42, 34, 0.06);
 }
 
 .prose .granny-project-category__header {
@@ -510,12 +515,15 @@ html.dark body {
 }
 
 .prose .granny-project-card-grid {
+  counter-reset: project-card;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
 .prose .granny-project-card {
+  counter-increment: project-card;
+  position: relative;
   display: grid;
   grid-template-rows: auto 1fr;
   min-height: 100%;
@@ -528,6 +536,25 @@ html.dark body {
   box-shadow: 0 16px 38px rgba(51, 42, 34, 0.1);
   color: var(--granny-ink);
   text-decoration: none;
+}
+
+.prose .granny-project-card::before {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 250, 242, 0.38);
+  border-radius: 999px;
+  background: rgba(8, 45, 79, 0.58);
+  color: #fff7ea;
+  font-size: 0.72rem;
+  font-weight: 800;
+  content: counter(project-card, decimal-leading-zero);
 }
 
 .prose .granny-project-card:hover {
@@ -560,6 +587,7 @@ html.dark body {
 }
 
 .prose .granny-project-card.placeholder {
+  min-height: 12rem;
   border-style: dashed;
   background:
     linear-gradient(135deg, rgba(255, 250, 242, 0.58), rgba(242, 221, 188, 0.24)),
@@ -567,13 +595,24 @@ html.dark body {
   box-shadow: none;
 }
 
+.prose .granny-project-card.placeholder::before {
+  border-color: rgba(8, 45, 79, 0.18);
+  background: rgba(255, 250, 242, 0.75);
+  color: var(--granny-coral);
+}
+
 .dark .prose .granny-about-card,
 .dark .prose .granny-profile-card,
+.dark .prose .granny-project-column,
 .dark .prose .granny-project-card {
   border-color: rgba(255, 250, 242, 0.13);
   background:
     linear-gradient(135deg, rgba(15, 36, 58, 0.95), rgba(28, 40, 57, 0.76)),
     repeating-linear-gradient(90deg, rgba(255, 250, 242, 0.035) 0 1px, transparent 1px 10px);
+}
+
+.dark .prose .granny-project-column {
+  background: rgba(15, 36, 58, 0.28);
 }
 
 .dark .prose .granny-about-copy strong,
