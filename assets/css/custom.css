@@ -43,18 +43,18 @@ html.dark body {
 }
 
 .granny-hero {
-  padding: 1.25rem 0 2.5rem;
+  padding: 2.25rem 0 2.75rem;
   text-align: center;
 }
 
 .granny-logo-frame {
   margin-inline: auto;
-  max-width: 1080px;
+  max-width: 560px;
   overflow: hidden;
-  border: 1px solid rgba(8, 45, 79, 0.14);
-  border-radius: 16px;
-  background: #fff7ea;
-  box-shadow: var(--granny-shadow);
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none;
 }
 
 .granny-logo-frame img {
@@ -295,7 +295,7 @@ html.dark body {
 
 @media (max-width: 640px) {
   .granny-hero {
-    padding-top: 0.75rem;
+    padding-top: 1.25rem;
   }
 
   .granny-hero h1 {
@@ -304,6 +304,7 @@ html.dark body {
   }
 
   .granny-logo-frame {
+    max-width: 330px;
     border-radius: 10px;
   }
 
