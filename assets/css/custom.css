@@ -481,15 +481,18 @@ html.dark body {
   text-decoration: none;
 }
 
-.prose .granny-project-category {
+.prose .granny-project-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
   margin: 2.25rem 0 3rem;
 }
 
+.prose .granny-project-column {
+  min-width: 0;
+}
+
 .prose .granny-project-category__header {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 1rem;
-  align-items: end;
   margin-bottom: 1rem;
   border-bottom: 2px solid rgba(8, 45, 79, 0.14);
   padding-bottom: 0.85rem;
@@ -508,7 +511,7 @@ html.dark body {
 
 .prose .granny-project-card-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -556,21 +559,12 @@ html.dark body {
   line-height: 1.6;
 }
 
-.prose .granny-project-card.studio {
-  grid-column: span 2;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  grid-template-rows: none;
-}
-
-.prose .granny-project-card.studio img {
-  height: 100%;
-  min-height: 14rem;
-  aspect-ratio: auto;
-}
-
-.prose .granny-project-card.studio div {
-  align-self: center;
-  padding: 1.25rem;
+.prose .granny-project-card.placeholder {
+  border-style: dashed;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 242, 0.58), rgba(242, 221, 188, 0.24)),
+    repeating-linear-gradient(90deg, rgba(8, 45, 79, 0.02) 0 1px, transparent 1px 10px);
+  box-shadow: none;
 }
 
 .dark .prose .granny-about-card,
@@ -605,12 +599,8 @@ html.dark body {
   .granny-grid,
   .granny-projects,
   .prose .granny-section-intro,
-  .prose .granny-project-card-grid {
+  .prose .granny-project-columns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .prose .granny-project-category__header {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -644,8 +634,7 @@ html.dark body {
   .granny-grid,
   .granny-projects,
   .prose .granny-section-intro,
-  .prose .granny-project-card-grid,
-  .prose .granny-project-card.studio {
+  .prose .granny-project-columns {
     grid-template-columns: 1fr;
   }
 
@@ -658,12 +647,4 @@ html.dark body {
     height: 6rem;
   }
 
-  .prose .granny-project-card.studio {
-    grid-column: auto;
-  }
-
-  .prose .granny-project-card.studio img {
-    min-height: 0;
-    aspect-ratio: 16 / 9;
-  }
 }

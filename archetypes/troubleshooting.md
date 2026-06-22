@@ -8,6 +8,7 @@ tags: []
 projects: []
 area: ""
 severity: ""
+showTableOfContents: true
 ---
 
 ## Symptom
