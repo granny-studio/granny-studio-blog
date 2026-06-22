@@ -5,10 +5,20 @@ draft: true
 slug: ""
 description: ""
 tags: []
+location: ""
+weather: ""
 ---
 
-## 기록
+## Moment
 
-## 사진
+그날의 장면.
 
-## 메모
+## Workspace
+
+작업 공간, 집중도, 환경.
+
+## Photos
+
+사진과 짧은 설명.
+
+## Notes

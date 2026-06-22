@@ -2,9 +2,8 @@
 title: "About"
 description: "SangSangCat과 Granny Studio 소개"
 slug: "about"
+showTableOfContents: false
 ---
-
-# About
 
 Granny Studio는 SangSangCat이 만들어가는 제품 개발과 창작의 기록입니다.
 

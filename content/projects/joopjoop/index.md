@@ -3,20 +3,22 @@ title: "JoopJoop"
 description: "부트캠프 중간 프로젝트"
 slug: "joopjoop"
 projects: ["joopjoop"]
+weight: 10
+showTableOfContents: false
 ---
-
-# JoopJoop
 
 부트캠프 중간 프로젝트입니다.
 
-## Project Type
+## Snapshot
 
-Personal Project
+- Type: Personal Project
+- Status: Archived
+- Context: 부트캠프 중간 프로젝트
 
-## Status
+## Archive Policy
 
-Archived
+이 페이지는 JoopJoop 자체를 설명하는 단일 소개 페이지가 아니라, JoopJoop 관련 개발 기록과 회고를 연결하는 프로젝트 허브로 운영합니다.
 
-## Notes
+## Related Records
 
-이 페이지는 JoopJoop 관련 개발 기록, 회고, 트러블슈팅을 연결하는 프로젝트 허브로 운영합니다.
+관련 글을 작성할 때 front matter의 `projects`에 `joopjoop`을 추가합니다.

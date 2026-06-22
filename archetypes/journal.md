@@ -6,15 +6,26 @@ slug: ""
 description: ""
 tags: []
 projects: []
-type: "devlog"
+recordType: "build-log"
+status: "draft"
 ---
 
-## 오늘 한 일
+## Context
 
-## 문제
+무엇을 만들고 있었는가.
 
-## 결정
+## Work Log
 
-## 배운 점
+오늘 한 일과 진행 상황.
 
-## 다음 작업
+## Decision
+
+결정한 것과 이유.
+
+## Learned
+
+배운 점과 다음에 바꿀 점.
+
+## Next
+
+다음 작업.
