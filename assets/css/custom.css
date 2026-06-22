@@ -369,11 +369,248 @@ html.dark body {
   background: rgba(15, 36, 58, 0.76);
 }
 
+.prose .granny-about-card,
+.prose .granny-profile-card {
+  margin: 1.75rem 0 2.25rem;
+  border: 1px solid rgba(8, 45, 79, 0.14);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 242, 0.95), rgba(242, 221, 188, 0.52)),
+    repeating-linear-gradient(90deg, rgba(8, 45, 79, 0.028) 0 1px, transparent 1px 10px);
+  box-shadow: 0 18px 48px rgba(51, 42, 34, 0.1);
+}
+
+.prose .granny-about-card {
+  padding: 1.25rem;
+}
+
+.prose .granny-about-copy span,
+.prose .granny-profile-card span,
+.prose .granny-project-category__header span,
+.prose .granny-project-card span {
+  display: inline-flex;
+  color: var(--granny-coral);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.prose .granny-about-copy strong,
+.prose .granny-profile-card strong {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--granny-navy);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.prose .granny-about-copy p,
+.prose .granny-profile-card p {
+  margin: 0.75rem 0 0;
+  color: rgba(23, 37, 56, 0.74);
+  line-height: 1.75;
+}
+
+.prose .granny-timeline {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.25rem 0 2.25rem;
+  border-left: 2px solid rgba(189, 96, 69, 0.38);
+  padding-left: 1rem;
+}
+
+.prose .granny-timeline div {
+  position: relative;
+  margin: 0;
+}
+
+.prose .granny-timeline div::before {
+  position: absolute;
+  top: 0.45rem;
+  left: -1.38rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 2px solid var(--granny-coral);
+  border-radius: 999px;
+  background: #fffaf2;
+  content: "";
+}
+
+.prose .granny-timeline span {
+  color: var(--granny-coral);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.prose .granny-timeline p {
+  margin: 0.25rem 0 0;
+  color: rgba(23, 37, 56, 0.74);
+}
+
+.prose .granny-profile-card {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 1.1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.prose .granny-profile-card img {
+  width: 7rem;
+  height: 7rem;
+  margin: 0;
+  border: 3px solid rgba(189, 96, 69, 0.22);
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.prose .granny-profile-card a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  margin-top: 0.85rem;
+  border: 1px solid rgba(8, 45, 79, 0.18);
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  background: var(--granny-navy);
+  color: #fff7ea;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.prose .granny-project-category {
+  margin: 2.25rem 0 3rem;
+}
+
+.prose .granny-project-category__header {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(8, 45, 79, 0.14);
+  padding-bottom: 0.85rem;
+}
+
+.prose .granny-project-category__header h2 {
+  margin: 0.35rem 0 0;
+  color: var(--granny-navy);
+}
+
+.prose .granny-project-category__header p {
+  margin: 0;
+  color: rgba(23, 37, 56, 0.68);
+  line-height: 1.65;
+}
+
+.prose .granny-project-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.prose .granny-project-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(8, 45, 79, 0.14);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 242, 0.94), rgba(242, 221, 188, 0.42)),
+    repeating-linear-gradient(90deg, rgba(8, 45, 79, 0.026) 0 1px, transparent 1px 10px);
+  box-shadow: 0 16px 38px rgba(51, 42, 34, 0.1);
+  color: var(--granny-ink);
+  text-decoration: none;
+}
+
+.prose .granny-project-card:hover {
+  border-color: rgba(189, 96, 69, 0.45);
+  box-shadow: 0 20px 50px rgba(51, 42, 34, 0.13);
+}
+
+.prose .granny-project-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  object-fit: cover;
+}
+
+.prose .granny-project-card div {
+  padding: 1rem;
+}
+
+.prose .granny-project-card strong {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--granny-navy);
+  font-size: 1.35rem;
+}
+
+.prose .granny-project-card p {
+  margin: 0.45rem 0 0;
+  color: rgba(23, 37, 56, 0.72);
+  line-height: 1.6;
+}
+
+.prose .granny-project-card.studio {
+  grid-column: span 2;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  grid-template-rows: none;
+}
+
+.prose .granny-project-card.studio img {
+  height: 100%;
+  min-height: 14rem;
+  aspect-ratio: auto;
+}
+
+.prose .granny-project-card.studio div {
+  align-self: center;
+  padding: 1.25rem;
+}
+
+.dark .prose .granny-about-card,
+.dark .prose .granny-profile-card,
+.dark .prose .granny-project-card {
+  border-color: rgba(255, 250, 242, 0.13);
+  background:
+    linear-gradient(135deg, rgba(15, 36, 58, 0.95), rgba(28, 40, 57, 0.76)),
+    repeating-linear-gradient(90deg, rgba(255, 250, 242, 0.035) 0 1px, transparent 1px 10px);
+}
+
+.dark .prose .granny-about-copy strong,
+.dark .prose .granny-profile-card strong,
+.dark .prose .granny-project-category__header h2,
+.dark .prose .granny-project-card strong {
+  color: rgb(255 247 234);
+}
+
+.dark .prose .granny-about-copy p,
+.dark .prose .granny-profile-card p,
+.dark .prose .granny-timeline p,
+.dark .prose .granny-project-category__header p,
+.dark .prose .granny-project-card p {
+  color: rgba(255, 250, 242, 0.72);
+}
+
+.dark .prose .granny-timeline div::before {
+  background: #091523;
+}
+
 @media (max-width: 900px) {
   .granny-grid,
   .granny-projects,
-  .prose .granny-section-intro {
+  .prose .granny-section-intro,
+  .prose .granny-project-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .prose .granny-project-category__header {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -406,7 +643,27 @@ html.dark body {
 
   .granny-grid,
   .granny-projects,
-  .prose .granny-section-intro {
+  .prose .granny-section-intro,
+  .prose .granny-project-card-grid,
+  .prose .granny-project-card.studio {
     grid-template-columns: 1fr;
+  }
+
+  .prose .granny-profile-card {
+    grid-template-columns: 1fr;
+  }
+
+  .prose .granny-profile-card img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .prose .granny-project-card.studio {
+    grid-column: auto;
+  }
+
+  .prose .granny-project-card.studio img {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
 }
