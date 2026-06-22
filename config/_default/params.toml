@@ -6,7 +6,7 @@ enableCodeCopy = true
 mainSections = ["projects", "journal", "troubleshooting", "life"]
 
 [homepage]
-layout = "background"
+layout = "hero"
 showRecent = true
 cardView = true
 cardViewScreenWidth = 1024
