@@ -1,13 +1,14 @@
-colorScheme = "blowfish"
-defaultAppearance = "dark"
-autoSwitchAppearance = true
+colorScheme = "granny"
+defaultAppearance = "light"
+autoSwitchAppearance = false
 enableSearch = true
 enableCodeCopy = true
 mainSections = ["projects", "journal", "troubleshooting", "life"]
 
 [homepage]
-layout = "hero"
+layout = "custom"
 showRecent = true
+showRecentItems = 6
 cardView = true
 cardViewScreenWidth = 1024
 homepageImage = "img/homepage-bg.svg"

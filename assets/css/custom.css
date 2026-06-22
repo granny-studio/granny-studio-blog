@@ -1,0 +1,322 @@
+:root {
+  --granny-cream: #fff7ea;
+  --granny-cream-deep: #f2ddbc;
+  --granny-navy: #082d4f;
+  --granny-ink: #172538;
+  --granny-coral: #bd6045;
+  --granny-green: #5f7559;
+  --granny-line: rgba(8, 45, 79, 0.16);
+  --granny-shadow: 0 24px 70px rgba(51, 42, 34, 0.14);
+}
+
+html:not(.dark) body {
+  background:
+    radial-gradient(circle at top left, rgba(189, 96, 69, 0.13), transparent 32rem),
+    radial-gradient(circle at top right, rgba(8, 45, 79, 0.09), transparent 28rem),
+    linear-gradient(180deg, #fffaf2 0%, #f8ead5 44%, #fffaf2 100%);
+  color: var(--granny-ink);
+}
+
+html.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(189, 96, 69, 0.18), transparent 32rem),
+    radial-gradient(circle at top right, rgba(98, 145, 177, 0.16), transparent 28rem),
+    linear-gradient(180deg, #081d31 0%, #101827 46%, #091523 100%);
+}
+
+.main-menu {
+  border-bottom: 1px solid var(--granny-line);
+  backdrop-filter: blur(16px);
+}
+
+.main-menu a {
+  color: var(--granny-navy);
+}
+
+.dark .main-menu a {
+  color: rgb(244 237 226);
+}
+
+.granny-home {
+  margin-inline: auto;
+  max-width: 1180px;
+}
+
+.granny-hero {
+  padding: 1.25rem 0 2.5rem;
+  text-align: center;
+}
+
+.granny-logo-frame {
+  margin-inline: auto;
+  max-width: 1080px;
+  overflow: hidden;
+  border: 1px solid rgba(8, 45, 79, 0.14);
+  border-radius: 16px;
+  background: #fff7ea;
+  box-shadow: var(--granny-shadow);
+}
+
+.granny-logo-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.granny-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  color: var(--granny-coral);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.granny-kicker::before,
+.granny-kicker::after {
+  width: 1.6rem;
+  height: 2px;
+  background: currentColor;
+  content: "";
+}
+
+.granny-hero h1 {
+  margin: 0.75rem auto 0;
+  max-width: 920px;
+  color: var(--granny-navy);
+  font-size: clamp(2.35rem, 4vw, 4.8rem);
+  line-height: 1.02;
+}
+
+.dark .granny-hero h1 {
+  color: rgb(255 247 234);
+}
+
+.granny-lead {
+  margin: 1rem auto 0;
+  max-width: 720px;
+  color: rgba(23, 37, 56, 0.76);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.dark .granny-lead {
+  color: rgba(255, 250, 242, 0.78);
+}
+
+.granny-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.granny-button {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(8, 45, 79, 0.2);
+  padding: 0.72rem 1.15rem;
+  background: rgba(255, 250, 242, 0.78);
+  color: var(--granny-navy);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(51, 42, 34, 0.08);
+}
+
+.granny-button:hover {
+  border-color: rgba(189, 96, 69, 0.5);
+  color: var(--granny-coral);
+}
+
+.granny-button.primary {
+  border-color: var(--granny-navy);
+  background: var(--granny-navy);
+  color: #fff7ea;
+}
+
+.granny-section {
+  margin-top: 3.5rem;
+}
+
+.granny-section-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(8, 45, 79, 0.16);
+  padding-bottom: 0.85rem;
+}
+
+.granny-section h2 {
+  margin: 0;
+  color: var(--granny-navy);
+  font-size: clamp(1.55rem, 2.2vw, 2.25rem);
+}
+
+.dark .granny-section h2 {
+  color: rgb(255 247 234);
+}
+
+.granny-section-header p {
+  margin: 0;
+  max-width: 560px;
+  color: rgba(23, 37, 56, 0.68);
+}
+
+.dark .granny-section-header p {
+  color: rgba(255, 250, 242, 0.68);
+}
+
+.granny-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.granny-card {
+  min-height: 11rem;
+  border: 1px solid rgba(8, 45, 79, 0.14);
+  border-radius: 8px;
+  padding: 1.1rem;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 242, 0.94), rgba(242, 221, 188, 0.5)),
+    repeating-linear-gradient(90deg, rgba(8, 45, 79, 0.035) 0 1px, transparent 1px 10px);
+  box-shadow: 0 16px 38px rgba(51, 42, 34, 0.1);
+}
+
+.dark .granny-card {
+  border-color: rgba(255, 250, 242, 0.13);
+  background:
+    linear-gradient(135deg, rgba(15, 36, 58, 0.95), rgba(28, 40, 57, 0.76)),
+    repeating-linear-gradient(90deg, rgba(255, 250, 242, 0.035) 0 1px, transparent 1px 10px);
+}
+
+.granny-card strong {
+  display: block;
+  color: var(--granny-navy);
+  font-size: 1.05rem;
+}
+
+.dark .granny-card strong {
+  color: rgb(255 247 234);
+}
+
+.granny-card p {
+  margin: 0.65rem 0 0;
+  color: rgba(23, 37, 56, 0.72);
+  line-height: 1.65;
+}
+
+.dark .granny-card p {
+  color: rgba(255, 250, 242, 0.7);
+}
+
+.granny-projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.granny-project {
+  position: relative;
+  min-height: 13rem;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(8, 45, 79, 0.14);
+  padding: 1.25rem;
+  background: var(--granny-navy);
+  color: #fff7ea;
+  text-decoration: none;
+}
+
+.granny-project::after {
+  position: absolute;
+  inset: auto -8% -28% auto;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 999px;
+  background: rgba(189, 96, 69, 0.42);
+  content: "";
+}
+
+.granny-project span {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  margin-bottom: 3.8rem;
+  color: rgba(255, 247, 234, 0.66);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.granny-project strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+  font-size: 1.45rem;
+}
+
+.granny-project p {
+  position: relative;
+  z-index: 1;
+  margin: 0.5rem 0 0;
+  color: rgba(255, 247, 234, 0.72);
+  line-height: 1.6;
+}
+
+.granny-recent {
+  margin: 4rem auto 0;
+  max-width: 1180px;
+}
+
+.granny-recent h2 {
+  color: var(--granny-navy);
+}
+
+.dark .granny-recent h2 {
+  color: rgb(255 247 234);
+}
+
+@media (max-width: 900px) {
+  .granny-grid,
+  .granny-projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .granny-hero {
+    padding-top: 0.75rem;
+  }
+
+  .granny-hero h1 {
+    font-size: 2.45rem;
+    line-height: 1.08;
+  }
+
+  .granny-logo-frame {
+    border-radius: 10px;
+  }
+
+  .granny-section-header {
+    display: block;
+  }
+
+  .granny-section-header p {
+    margin-top: 0.55rem;
+  }
+
+  .granny-grid,
+  .granny-projects {
+    grid-template-columns: 1fr;
+  }
+}
